@@ -1,0 +1,270 @@
+* {
+    font-family: 'Questrial', sans-serif;    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.nav {
+    background-color: #fcf6b1;
+    color: black;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    font-size: large;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.navList li {
+    cursor: pointer;
+    margin: 5%;
+}
+
+.navList li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* HOME SECTION */
+#Home {
+    height: 100vh
+}
+
+.home-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 0 150px; */
+    margin: 0;
+    font-size: xx-large;
+    letter-spacing: 0.2rem;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.home-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15%;
+}
+
+.home-span {
+    color: #d52941;
+    /* 7d387d, 6a2e35, ff785a, fff05a, 12664f, 95c623, e3170a */
+}
+
+.home-image {
+    height: 500px;
+    width: 700px;
+}
+
+/* SKILLS SECTION */
+#Skills {
+    height: 90vh;
+}
+
+.skills {
+    position: relative;
+    padding-top: 0.5px;
+}
+
+.skills-content {
+    font-weight: 800;
+    font-size: x-large;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.skills-image img {
+    width: 400px;
+    height: 700px;
+}
+
+.skills-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: 5% 2%;
+}
+
+.react, .js, .html, .css {
+    height: 4vh;
+    margin: 1%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.react {
+    background-color: #00d9ff;
+    width: 150vh;
+    color: white;
+}
+
+.js {
+    background-color: #f0d91d;
+    width: 130vh;
+    color: black
+}
+
+.html {
+    background-color: #f85124;
+    width: 110vh;
+    color: black
+}
+
+.css {
+    background-color: #146fb1;
+    width: 110vh;
+    color: #f8f8f8;
+}
+
+.other-skills {
+    text-align: left;
+    margin: 3% 1%;
+    font-size: large;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+}
+
+.other-skills-span {
+    color: #ff206e;
+}
+
+/* PROJECTS SECTION */
+#Projects {
+    height: 90vh;
+    padding: 10% 0;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects-title {
+    text-align: center;
+}
+
+.projects-list {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.indiproject {
+    /* border: 2px solid #ffbe0b; */
+    border-radius: 10px;
+    width: 70%;
+    margin: 50px;
+    height: 120%;
+    text-align: center;
+    /* background-color: #a9e5bb; */
+    color: #ff206e;
+    transition: 0.2s ease all;
+    box-shadow: -2px 1px 28px -10px #ffacc5;
+}
+
+.indiproject:hover {
+    transform: scale(1.1);
+    
+}
+
+.indiproject a {
+    text-decoration: none;
+    color: #8338ec;
+}
+
+.indiTitle {
+    font-weight: 700;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 10px 0;
+}
+
+.project-image {
+    height: 60%;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.other-projects {
+    text-align: center;
+    margin-top: 10%;
+    font-weight: 700;
+}
+
+.other-projects a {
+    color: #ff206e
+}
+
+/* CONTACT SECTION */
+#Contact {
+    height: 90vh;
+    margin-top: 10%;
+    padding: 5%;
+}
+
+.contact {
+    font-weight: 800;
+    font-size: x-large;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-options {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    margin: 8% 33%;
+    grid-gap: 70px;
+}
+
+
+.indi img {
+    height: 50px;
+    width: 50px;
+}
+
+.mail {
+    cursor: pointer;
+}
+
+.mail p{
+    font-size: small;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
