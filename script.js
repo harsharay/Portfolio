@@ -22,7 +22,7 @@ let projects_array = [{
 {
     title: "CURRENCY CONVERTER",
     image: "https://github.com/harsharay/currency-converter/raw/master/currency-converter.png",
-    website: "https://github.com/harsharay/currency-converter",
+    website: "https://harsharay.github.io/currency-converter/",
     techStack: "REACT JS, REACT-HOOKS,REACT JS, REST API, HTML5, CSS3",
     description: "Developed a currency converter to determine the exchange rates between various currencies. This website uses external API and fetches the data upon the user's request."
 },    
@@ -35,7 +35,7 @@ let mailText = document.querySelector(".mail-text")
 projects_array.forEach((item) => {
     projectsList.innerHTML += `<div class=indiProject href=${item.website} target="_blank">
         <h3 class=indiTitle>${item.title}</h3>
-        <a href=${item.website}>Click here for Live Demo</a>
+        <a href=${item.website} target="_blank">Click here for Live Demo</a>
         <img src="${item.image}" alt="test" class="project-image"/>
     </div>` 
 })
