@@ -47,7 +47,8 @@ let mail = document.querySelector(".mail")
 let mailText = document.querySelector(".mail-text")
 
 projects_array.forEach((item) => {
-    projectsList.innerHTML += `<div class=indiProject href=${item.website} target="_blank">
+    projectsList.innerHTML += 
+    `<div class=indiProject href=${item.website} target="_blank">
         <h3 class=indiTitle>${item.title}</h3>
         <a href=${item.website} target="_blank">Click here for Live Demo</a>
         <img src="${item.image}" alt="test" class="project-image"/>
