@@ -64,7 +64,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 15%;
+    margin-left: 10%;
+}
+
+.home-content p {
+    margin: 5px;
 }
 
 .home-span {
@@ -108,14 +112,12 @@
 }
 
 .skills-block {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* align-items: center; */
-    margin: 5% 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5% 0 5% 11%;
 }
 
-.react, .js, .html, .css {
+.react, .js, .html, .css, .nodejs, .express, .restapi, .firebase, .mongodb {
     height: 4vh;
     width: 30vh;
     margin: 5%; 
@@ -123,7 +125,9 @@
     justify-content: center;
     align-items: center; 
     font-weight: 1000;
+    font-size: large;
     letter-spacing: 0.1rem;
+    border-radius: 5px;
 }
 
 .react {
@@ -146,6 +150,27 @@
     color: #f8f8f8;
 }
 
+.nodejs {
+    background-color: #5aaa45;
+}
+
+.express {
+    background-color: #f5f5f5;
+}
+
+.restapi {
+    border: 1px solid black
+}
+
+.firebase {
+    background-color: #ffa713;
+}
+
+.mongodb {
+    background: linear-gradient(90deg, rgba(86,146,52,1) 0%, rgba(86,146,52,1) 100%);
+    color: #f5f5f5;
+}
+
 .other-skills {
     text-align: left;
     margin: 15% 20%;
@@ -162,7 +187,7 @@
 #Projects {
     height: 90vh;
     padding: 10% 0;
-    margin-top: 20%;
+    margin: 20% 5% 20% 7%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -183,12 +208,12 @@
     border-radius: 10px;
     width: 70%;
     margin: 50px;
-    height: 120%;
+    height: 50%;
     text-align: center;
     /* background-color: #a9e5bb; */
     color: #ff206e;
     transition: 0.2s ease all;
-    box-shadow: -2px 1px 28px -10px #ffacc5;
+    /* box-shadow: -2px 1px 28px -10px #197bbd; */
 }
 
 .indiproject:hover {
@@ -203,7 +228,7 @@
 
 .indiTitle {
     font-weight: 700;
-    font-size: large;
+    font-size: medium;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin: 10px 0;
@@ -236,20 +261,24 @@
     font-weight: 800;
     font-size: x-large;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+}
+
+.contact p {
+    margin: 0 36% 0 33%;
 }
 
 .contact-options {
     display: grid;
     grid-template-columns: 200px 200px;
-    margin: 8% 33%;
+    margin: 8% 35%;
     grid-gap: 70px;
 }
 
 
 .indi img {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
 }
 
 .mail {
@@ -257,9 +286,9 @@
 }
 
 .mail p{
-    font-size: small;
+    font-size: large;
     font-weight: 800;
-    margin-top: 10px;
+    margin: 10px 7px ;
 }
 
 .hide {
